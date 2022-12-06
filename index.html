@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shi Fu Mi</title>
+
+</head>
+
+<body>
+    <!-- Nuages-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class='d-flex flex-wrap' id="">
+                <img src="assets/img/nuage2.png" id="nuage2" style="width: 350px; height: 150px;" alt="nuage">
+                <p class="titre d-flex justify-content-center align-items-center">Shi fu mi !</p>
+                <img src="assets/img/nuage1.png" id="nuage1" style="width: 400px;" alt="nuage">
+            </div>
+        </div>
+
+        <div class="row">
+        <!-- Bloc pour jouer -->
+            <div class="col-lg-4">
+                <div class="jeu">
+                    <p class="d-flex justify-content-center fs-1">Choisis une arme :</p>
+                    <div class="row  ">
+                        <div class="col-6">
+                            <div class="button btn-joueur">
+                                <img class="imageMonstreJoueur" value="" src="assets/img/monstre1.png" style="width: 140px;">
+                            </div>
+                            <div class="button btn-joueur mt-4">
+                                <img class="imageMonstreJoueur" value="" src="assets/img/monstre2.png" style="width: 140px;">
+                            </div>
+                            <div class="button btn-joueur mt-4">
+                                <img class="imageMonstreJoueur" value="" src="assets/img/monstre3.png" style="width: 140px;">
+                            </div>
+                        </div>
+
+                        <!-- boutons joueur -->
+                        <div class="col-6">
+                            <div class="imageArme1 button btn-joueur">
+                                <input onmouseover="bigImg(this)" onmouseout="normalImg(this)" type="image" id="oiseau"
+                                    value="oiseau" src="assets/img/arme1.png" style="width: 120px;">
+                            </div>
+                            <div class="imageArme button btn-joueur">
+                                <input onmouseover="bigImg(this)" onmouseout="normalImg(this)" type="image" id="avion"
+                                    value="avion" src="assets/img/arme3.png" style="width: 120px;">
+                            </div>
+                            <div class="imageArme button btn-joueur">
+                                <input onmouseover="bigImg(this)" onmouseout="normalImg(this)" type="image" id="ovni"
+                                    value="ovni" src="assets/img/arme2.png" style="width: 120px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5">
+                <!-- Boutons pour jouer -->
+                <div class="row action">
+                    <p id="message" class="d-flex justify-content-center align-items-center ">A toi de jouer !</p>
+                </div>
+                <!-- Bloc score-->
+                <div class="score row ">
+                    <div class="col-6 mt-3">
+                        <p class="text-center fs-1">Monstre</p>
+                        <p id="score-joueur" class="text-center pt-3 fw-bolder">0</p>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <p class="text-center fs-1">Adversaire</p>
+                        <p id="score-ordinateur" class="text-center pt-3 fw-bolder">0</p>
+                    </div>
+                    <!-- <div id="reset" class="mt-5 fw-bolder">Recommencer</div> -->
+                </div>
+                <!--bloc arène -->
+                <div class="row mt-5 ">
+                    <div class="col-6 d-flex justify-content-center align-items-center" id="pouet">
+                        <img id="areneJoueur" src="" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col-6 d-flex justify-content-center align-items-center" id="pouetOrdi">
+                        <img id="areneOrdi" src="" alt="" style="width: 150px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="jeu ">
+                    <p class="d-flex justify-content-center align-items-center fs-1">Adversaires</p>
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="imageArmeAdversaire1 button btn-joueur ms-5">
+                                <img id="" value="avion" src="assets/img/arme3.png" style="width: 130px;">
+                            </div>
+                            <div class="imageArmeAdversaire button btn-joueur ms-5">
+                                <img id="" value="ovni" src="assets/img/arme2.png" style="width: 130px;">
+                            </div>
+                            <div class="imageArmeAdversaire button btn-joueur ms-5">
+                                <img value="oiseau" src="assets/img/arme1.png" style="width: 130px;">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="button btn-joueur">
+                                <img id="" value="" src="assets/img/monstre4.png" style="width: 130px;">
+                            </div>
+                            <div class="button btn-joueur mt-4">
+                                <img id="" value="" src="assets/img/monstre5.png" style="width: 140px;">
+                            </div>
+                            <div class="button btn-joueur mt-4">
+                                <img id="" value="" src="assets/img/monstre6.png" style="width: 140px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="reset" class="row d-flex justify-content-center align-items-center fs-3">Recommencer</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
