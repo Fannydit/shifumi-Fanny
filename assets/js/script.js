@@ -131,17 +131,17 @@ cloneOvniOrdi = () => {
 //le choix du joueur apparaît dans la div pouet
 cloneBird = () => {
     let pouet = document.getElementById('areneJoueur'); 
-    pouet.src =  "assets/img/arme1.png"
+    pouet.src =  "assets/img/arme1bis.png"
 };
 
 cloneAvion = () => {
     let pouet = document.getElementById('areneJoueur'); 
-    pouet.src =  "assets/img/arme3.png"
+    pouet.src =  "assets/img/arme3bis.png"
 };
 
 cloneOvni = () => {
     let pouet = document.getElementById('areneJoueur'); 
-    pouet.src =  "assets/img/arme2.png"
+    pouet.src =  "assets/img/arme2bis.png"
 };
 
 
